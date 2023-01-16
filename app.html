@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIC TAC TOE</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="icon" href="download.jpg">
+</head>
+
+<body>
+  <div class="body">
+    <!-- I WILL BUILD A TIC TAC TOE GAME -->
+    <div id="begin" class="wrapper">
+      <div class="box">
+        
+        <h1 id="head_line">WHO STARTS</h1>
+        
+      </div>
+      <div class="radio_buttons box">
+        <p>
+          <label for="start">X</label>
+          <input type="radio" name="start" class="radio_menu" id="X" />
+          <label for="start">O</label>
+          <input type="radio" name="start" class="radio_menu" id="O" />
+        </p>
+      </div>
+      <br />
+      <button id="start_game">START</button>
+    </div>
+  </div>
+
+  <div id="turn_msg"></div>
+
+  <div id="box">
+    <div id="row1" class="row">
+      <div class="cells" id="cell1"></div>
+      <div class="cells" id="cell2"></div>
+      <div class="cells" id="cell3"></div>
+    </div>
+    <div id="row2" class="row">
+      <div class="cells" id="cell4"></div>
+      <div class="cells" id="cell5"></div>
+      <div class="cells" id="cell6"></div>
+    </div>
+    <div id="row3" class="row">
+      <div class="cells" id="cell7"></div>
+      <div class="cells" id="cell8"></div>
+      <div class="cells" id="cell9"></div>
+    </div>
+  </div>
+  <div id="message"></div>
+  <div class="button">
+    <button id="restart">RESTART</button>
+  </div>
+
+
+  <!--  below are the div's to show result of game  -->
+
+  <div class="custom-model-main">
+    <div class="custom-model-inner">        
+    <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+               <!-- Content Here -->
+              </div>
+            
+        </div>  
+    </div>  
+    <div class="bg-overlay"></div>
+</div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
