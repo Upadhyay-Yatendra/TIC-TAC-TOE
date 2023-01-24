@@ -56,7 +56,7 @@ function turn_msg() {
     if (isX == 1)
         label.innerHTML = "X your turn";
     else
-        label.innerHTML = "O YOUR TURN";
+        label.innerHTML = "O your turn";
 }
 
 function set() {
@@ -107,7 +107,7 @@ const WPS = [
 ]
 
 function checkwin(currentVal) {
-    console.log(`checkwin was called with ${currentVal}`);
+    // console.log(`checkwin was called with ${currentVal}`);
     for (w of WPS) {
         if (currentVal == board[w[0]].textContent && currentVal == board[w[1]].textContent && currentVal == board[w[2]].textContent && currentVal != "") {
             var declare = document.querySelector(".pop-up-content-wrap")
@@ -148,4 +148,4 @@ function playSound(name) {
 }
 
 
-
+//      i am  bug and i exist ... find me out 

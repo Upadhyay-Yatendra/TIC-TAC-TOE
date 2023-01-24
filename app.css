@@ -17,7 +17,10 @@ body {
 .row {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-around;
+    width: 5rem;
+    /* max-height: 7rem; */
+    /* table-layout: fixed; */
 }
 
 .cells {
@@ -26,14 +29,19 @@ body {
     font-size: 2rem;
     margin: 0.1rem;
     background-color: aqua;
-    padding: 1em;
+    padding: 1.35rem;
     border: #234567 solid 5px;
     border-radius: 10px;
+    /* max-width: 3rem; */
+    height: 5rem;
+    /* max-block-size: 20rem; */
+    /* padding: 3rem 3rem; */
 }
 
-#message {
-    background-color: #ea0404;
-}
+/* #message {
+    background-color: blue;
+    height: 2rem;
+} */
 
 .button {
     display: flex;
@@ -63,8 +71,22 @@ button {
 }
 
 input[type="radio"] {
-    height: 1.5em;
-    width: 1.5em;
+    /* border: 20rem solid red; */
+    /* appearance:none; */
+    border-radius: 50%;
+    background: #cc320333;
+    border: 3px solid #FFF;
+    accent-color: #00de59;
+    box-shadow: 0 0 0 1px #f94007;
+    height: 1.4rem;
+    width: 1.4rem;
+
+
+  
+    /* The outline will be the outer circle */
+    outline: 1px solid #999;
+
+
 }
 
 .radio_buttons {
@@ -80,6 +102,30 @@ input[type="radio"] {
     color: rgb(42, 165, 63);
     text-align: center;
     font-weight: 600;
+}
+
+#start_game:hover
+{
+    cursor:grab;
+    border: 0.5em solid rgb(219, 73, 24);
+}
+
+#restart:hover
+{
+    cursor:grab;
+    border: 0.5em solid rgb(219, 73, 24);
+}
+
+
+#start_game:active
+{
+    background-color: aqua;
+    cursor:grab;
+}
+
+#restart
+{
+    cursor:grabbing;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
@@ -296,6 +342,13 @@ p {
     color: black;
     background-color: #fff;
     letter-spacing: 0.2rem;
+  }
+
+  .close-btn:hover
+  {
+    /* margin-top: 1em; */
+    font-size:40px;
+    background-color: #18e0d3;
   }
   
   @media screen and (min-width:800px){
